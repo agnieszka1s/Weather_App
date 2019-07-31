@@ -1,4 +1,5 @@
 import React from 'react';
+import './Form.css';
 
 class Form extends React.Component {
     render(){
@@ -6,7 +7,7 @@ class Form extends React.Component {
      <form onSubmit={this.props.getWeather}>
         <input type="text" name="city" placeholder="City..."></input>
         <input type="text" name="country" placeholder="Country..."></input>
-        <button>Get weather</button>
+        <button class="btn btn-getWeather">Get weather</button>
      </form>
         )
     }

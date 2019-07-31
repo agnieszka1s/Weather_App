@@ -1,8 +1,8 @@
 import React from 'react';
 import './App.css';
-import Titles from "./components/Titles";
-import Form from './components/Form';
-import Weather from './components/Weather';
+import Titles from "./components/Titles/Titles";
+import Form from './components/Form/Form';
+import Weather from './components/Weather/Weather';
 
 const API_KEY = "cdc195cca1520f4d7fb04c26e002107b";
 
@@ -24,7 +24,7 @@ class App extends React.Component {
   
    if (city && country ) {
     console.log(data);
-   
+    
     this.setState({
      temperature: data.main.temp,
      city: data.name,
@@ -46,7 +46,7 @@ class App extends React.Component {
   }
   render () {
     return (
-      <div>
+      <div className="main-container">
         <Titles />
         <Form getWeather={this.getWeather}/>
         <Weather
