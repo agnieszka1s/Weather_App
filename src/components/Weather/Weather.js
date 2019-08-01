@@ -17,7 +17,7 @@ import "./Weather.css";
 //  export default Weather;
 
  const Weather = props => (
-    <div>
+    <div className="weather_container">
             {props.citmy && props.country && <p>Location: {props.city}, {props.country}</p>}
             {props.temperature && <p>Temperature: {Math.floor(props.temperature-273.15)}°C</p>}
             {props.humidity && <p> Humidity: {props.humidity}</p>}

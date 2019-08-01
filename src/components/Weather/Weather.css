@@ -1,0 +1,11 @@
+.weather_container {
+    width: 300px;
+    height: 150px;
+    /* border: 1px black solid; */
+    position: relative;
+    display: block;
+    left: 25%;
+    top: 25%;
+    text-align: center;
+    padding: 10px;
+}
